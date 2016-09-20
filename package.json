@@ -46,6 +46,7 @@
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
     "nodemon": "^1.10.2",
+    "sinon": "^1.17.6",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1"
   }
