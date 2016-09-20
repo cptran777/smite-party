@@ -1,0 +1,37 @@
+{
+  "name": "smite-party",
+  "version": "1.0.0",
+  "description": "Smite game companion application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cptran777/smite-party.git"
+  },
+  "keywords": [
+    "Smite",
+    "game",
+    "companion",
+    "pentakill",
+    "moba"
+  ],
+  "author": "Charlie Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cptran777/smite-party/issues"
+  },
+  "homepage": "https://github.com/cptran777/smite-party#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0",
+    "redux-form": "^6.0.5",
+    "redux-promise": "^0.5.3"
+  }
+}
