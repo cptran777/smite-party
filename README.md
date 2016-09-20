@@ -40,4 +40,8 @@ A note on the use of Redux:
 
 Redux may seem like overkill at the moment, but keeping future iterations in mind, the clean uni-directional data flow of Redux and single source of state that Redux can provide will be essential in the application. Hopefully it won't kill the mobile loading times. 
 
+## Deployment
+
+This application will be deployed on Heroku for simplicity. 
+
 ## Issues and Challenges 
