@@ -34,4 +34,10 @@ Why mobile friendly?
 
 This application is a companion application for Smite players, who will likely be on PC or console playing a game client already. This makes accessing the application on mobile much more convenient than having a laptop nearby and pulling up a desktop browser. 
 
-For the first iteration of this application, the architecture is fairly simple. The backend is a Node server that will serve up the React frontend. It will also communicate with a service that will house most of the randomization logic, and the service will also communicate with a database that contains the gods. 
+For the first iteration of this application, the architecture is fairly simple. The backend is a Node server that will serve up the React frontend. It will also communicate with a service that will house most of the randomization logic, and the service will also communicate with a database that contains the gods.
+
+A note on the use of Redux:
+
+Redux may seem like overkill at the moment, but keeping future iterations in mind, the clean uni-directional data flow of Redux and single source of state that Redux can provide will be essential in the application. Hopefully it won't kill the mobile loading times. 
+
+## Issues and Challenges 
