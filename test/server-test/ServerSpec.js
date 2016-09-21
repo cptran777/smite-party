@@ -4,8 +4,6 @@ var request = require('request');
 /************************************************************/
 // Mocha doesn't have a way to designate pending before blocks.
 // Mimic the behavior of xit and xdescribe with xbeforeEach.
-// Remove the 'x' from beforeEach block when working on
-// authentication tests.
 /************************************************************/
 var xbeforeEach = function() {};
 /************************************************************/
