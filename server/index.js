@@ -1,21 +1,21 @@
 /******************* INIT DEPENDENCIES *********************/
 
-var express = require('express');
-var bodyparser = require('body-parser');
-var http = require('http');
-var request = require('request');
+let express = require('express');
+let bodyparser = require('body-parser');
+let http = require('http');
+let request = require('request');
 
-var app = express();
+let app = express();
 
 /***************** INIT CUSTOM MODULES *********************/
-var router = require('./routes');
+let router = require('./routes');
 
 router(app);
 /******************* INIT MIDDLEWARE ***********************/
 
 app.use(express.static(__dirname + '/../client/public'));
 
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
@@ -25,7 +25,7 @@ app.use(bodyparser.json());
 
 /********************* INIT SERVER *************************/
 
-var port = process.env.PORT || 3000;
-var server = app.listen(port, ()=>{
+let port = process.env.PORT || 3000;
+let server = app.listen(port, () => {
   console.log('Listening on port', port);
 });

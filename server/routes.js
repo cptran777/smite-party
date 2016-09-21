@@ -1,8 +1,8 @@
-var path = require('path');
+let path = require('path');
 
-module.exports = function(app) {
+module.exports = (app) => {
   
-  var sendFile = function(req, res) {
+  let sendFile = (req, res) => {
     res.sendFile(path.resolve(__dirname + '/../client/public/index.html'));
   };
   
