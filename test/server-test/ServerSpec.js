@@ -14,7 +14,7 @@ describe('', function() {
   beforeEach(function() {
   });
 
-  describe('Randomizer', function() {
+  describe('', function() {
 
     xbeforeEach(function(done) {
     });
