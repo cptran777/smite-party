@@ -35,6 +35,9 @@ module.exports = (app) => {
   });
 
   app.get('/test', (req, res) => {
+    console.log('/test request received!');
+    console.log('test req body: ', req.query);
+    console.log(req.query.testing);
     res.send({myResponse: 'Hello darkness'});
   });
 
