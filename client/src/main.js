@@ -19,7 +19,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path='/' component={App}>
-        <IndexRoute component={}/>
+        <IndexRoute component={App}/>
       </Route>
     </Router>
   </Provider>,
