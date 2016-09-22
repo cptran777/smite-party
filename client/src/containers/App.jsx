@@ -2,6 +2,8 @@ import React from 'react';
 
 /******************* COMPONENT IMPORTS *********************/
 
+import Randomizer from '../components/Randomizer';
+
 /********************* REDUX IMPORTS ***********************/
 
 import { connect } from 'react-redux';
