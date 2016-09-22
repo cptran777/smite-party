@@ -4,6 +4,11 @@
   "description": "Smite game companion application",
   "main": "index.js",
   "scripts": {
+    "start": "node server/index.js",
+    "build": "npm run build:dev",
+    "build:dev": "webpack --watch -d",
+    "build:prod": "webpack",
+    "postinstall": "npm run build:prod",
     "test": "node server/index.js & mocha --bail --reporter nyan test/server-test/ServerSpec.js; pkill -n node; live-server --open=./test/client-test/SpecRunner.html --port=8081"
   },
   "repository": {
