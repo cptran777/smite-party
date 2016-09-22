@@ -11,15 +11,15 @@ module.exports = (app) => {
 
   app.get('/randomize', (req, res) => {
   	
-  	if (req.body.players === undefined) {
+  	if (req.query.players === undefined) {
   	  return;
   	}
   	
   	let options = {
   	  uri: 'http://127.0.0.1:8000/api',
   	  json: {
-  	  	players: req.body.players,
-  	  	roles: req.body.roles
+  	  	players: req.query.players,
+  	  	roles: req.query.roles
   	  }
   	};
 
