@@ -6,7 +6,7 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as Actions from '../actions/index.js';
+// import * as Actions from '../actions/index.js';
 
 // The app class acts as the main container to store the entirety
 // of what the user will see as the web application
@@ -17,7 +17,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="">
+      <div className="center-block fill">
       </div>
     );
   }
