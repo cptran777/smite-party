@@ -42,6 +42,6 @@ module.exports = {
     progress: true
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    // new webpack.HotModuleReplacementPlugin()
   ]
 };
