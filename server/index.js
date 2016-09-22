@@ -10,7 +10,6 @@ let app = express();
 /***************** INIT CUSTOM MODULES *********************/
 let router = require('./routes');
 
-router(app);
 /******************* INIT MIDDLEWARE ***********************/
 
 app.use(express.static(__dirname + '/../client/public'));
@@ -25,6 +24,7 @@ app.use(bodyparser.json());
 
 /********************* INIT SERVER *************************/
 
+router(app);
 let port = process.env.PORT || 3000;
 let server = app.listen(port, () => {
   console.log('Listening on port', port);
