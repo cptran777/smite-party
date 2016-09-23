@@ -54,7 +54,6 @@ class Randomizer extends React.Component {
       this.setState({teamAssignments: JSON.stringify({'Charlie': this.state.player1, 'Brent': this.state.player2, 'Kevin': this.state.player3})});
     }
 
-    this.setState({text: this.state.teamAssignments});
     return;
   }
 
