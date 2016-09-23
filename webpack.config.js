@@ -46,8 +46,6 @@ const PATHS = {
 //   ]
 // };
 
-var webpack = require('webpack');
-
 module.exports = {
   entry: [
     PATHS.src
