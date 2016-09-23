@@ -28,7 +28,7 @@ class Randomizer extends React.Component {
   handleSubmit() {
 
     $.ajax({
-      uri: 'https://smiteparty.herokuapp.com/randomize', 
+      url: 'https://smiteparty.herokuapp.com/randomize', 
       type: 'GET',
       data: {
         players: [
