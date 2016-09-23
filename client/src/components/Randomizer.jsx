@@ -28,7 +28,7 @@ class Randomizer extends React.Component {
   handleSubmit() {
 
     $.ajax({
-      url: 'http://127.0.0.1:3000/randomize', 
+      uri: '/randomize', 
       type: 'GET',
       data: {
         players: [

@@ -18,7 +18,7 @@ module.exports = (app) => {
   	}
   	
   	let options = {
-  	  uri: 'http://127.0.0.1:8000/api',
+  	  uri: 'https://smitepartyservice.herokuapp.com/api',
   	  json: {
   	  	players: req.query.players,
   	  	roles: req.query.roles
