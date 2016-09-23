@@ -13,7 +13,7 @@ let router = require('./routes');
 
 /******************* INIT MIDDLEWARE ***********************/
 
-app.use(express.static(__dirname + '/../client/public'));
+app.use(express.static(__dirname + '/../client/'));
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
