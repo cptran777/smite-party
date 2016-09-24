@@ -27266,7 +27266,7 @@
 	      var _this2 = this;
 
 	      $.ajax({
-	        url: 'http://127.0.0.1:3000/randomize',
+	        url: 'https://smiteparty.herokuapp.com/randomize',
 	        type: 'GET',
 	        data: {
 	          players: [this.state.player1, this.state.player2, this.state.player3, this.state.player4, this.state.player5],
@@ -27286,7 +27286,6 @@
 	        this.setState({ teamAssignments: JSON.stringify({ 'Charlie': this.state.player1, 'Brent': this.state.player2, 'Kevin': this.state.player3 }) });
 	      }
 
-	      this.setState({ text: this.state.teamAssignments });
 	      return;
 	    }
 	  }, {
@@ -27301,6 +27300,11 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'form-group' },
+	          _react2.default.createElement(
+	            'label',
+	            null,
+	            'Enter player names and hit submit to have random roles/gods assigned to each player!'
+	          ),
 	          numPlayers.map(function (num) {
 	            return _react2.default.createElement(
 	              'div',
