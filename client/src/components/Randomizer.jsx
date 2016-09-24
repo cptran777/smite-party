@@ -1,8 +1,9 @@
+// The Randomizer component allows the user to enter the names of their friends and have random
+// gods and roles assigned to each person. 
+
 import React from 'react';
 
-let TeamAssignments = (props) => {
-  return (<p>{props.message}</p>);
-};
+import TeamAssignments from './TeamAssignments';
 
 class Randomizer extends React.Component {
   constructor(props) {
@@ -43,16 +44,17 @@ class Randomizer extends React.Component {
       dataType: 'json',
       success: (data) => {
         console.log('Response: ', data);
-        this.setState({text: JSON.stringify(data)});
+        this.setState({teamAssignments: data});
       },
       error: (err) => {
         console.log('No');
       }
     });
 
-    if (this.state.teamAssignments === null) {
-      this.setState({teamAssignments: JSON.stringify({'Charlie': this.state.player1, 'Brent': this.state.player2, 'Kevin': this.state.player3})});
-    }
+    // This code section to be deleted once proper assignment has been confirmed
+    // if (this.state.teamAssignments === null) {
+    //   this.setState({teamAssignments: JSON.stringify({'Charlie': this.state.player1, 'Brent': this.state.player2, 'Kevin': this.state.player3})});
+    // }
 
     return;
   }
@@ -61,6 +63,7 @@ class Randomizer extends React.Component {
     let numPlayers = ['1', '2', '3', '4', '5'];
     return (
       <div className="Randomizer">
+        <h1> Randomizer </h1>
         <div className="form-group">
           <label>Enter player names and hit submit to have random roles/gods assigned to each player!</label>
           {
@@ -77,7 +80,7 @@ class Randomizer extends React.Component {
           }
         </div>
         <button className="btn" onClick={this.handleSubmit.bind(this)}>S u b m i t</button>
-        {this.state.teamAssignments ? <TeamAssignments message={this.state.text} /> : null}
+        {this.state.teamAssignments ? <TeamAssignments assignments={this.state.teamAssignments} /> : null}
       </div>
     )
   }
