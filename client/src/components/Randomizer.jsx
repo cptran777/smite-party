@@ -62,6 +62,7 @@ class Randomizer extends React.Component {
     return (
       <div className="Randomizer">
         <div className="form-group">
+          <label>Enter player names and hit submit to have random roles/gods assigned to each player!</label>
           {
             numPlayers.map((num) => {
               return (
