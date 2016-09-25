@@ -29,7 +29,7 @@ class Randomizer extends React.Component {
   handleSubmit() {
 
     $.ajax({
-      url: 'https://smiteparty.herokuapp.com/randomize', 
+      url: 'http://127.0.0.1:3000/randomize', //'https://smiteparty.herokuapp.com/randomize', 
       type: 'GET',
       data: {
         players: [
@@ -80,7 +80,7 @@ class Randomizer extends React.Component {
           }
         </div>
         <button className="btn" onClick={this.handleSubmit.bind(this)}>S u b m i t</button>
-        {this.state.teamAssignments ? <TeamAssignments assignments={this.state.teamAssignments} /> : null}
+        <TeamAssignments />
       </div>
     )
   }

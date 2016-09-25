@@ -4,6 +4,10 @@
 let TeamAssignments = (props) => {
   
   const assignments = props.assignments;
+  if (!assignments) {
+  	return (<div></div>);
+  }
+
   let team = [];
 
   for (let player in assignments) {
@@ -27,3 +31,5 @@ let TeamAssignments = (props) => {
   );
 
 };
+
+export default TeamAssignments;
