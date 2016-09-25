@@ -1,5 +1,8 @@
 import React from 'react';
 
+/*********************** UTIL IMPORTS **********************/
+import lib from '/../util/lib'
+
 // Team assignments is a stateless component that will render onto an element all of the passed 
 // assignments to it through the props
 
