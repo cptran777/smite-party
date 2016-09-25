@@ -23,12 +23,10 @@ let TeamAssignments = (props) => {
 
   }
 
-
-
   return (
   	<div className="teamAssignments">
   	  {team.map((member) => {
-  	  	return <div>{member.name}: {member.role} as {member.god}</div>
+  	  	return <div key={member.name}>{member.name}: {member.role} as {member.god.name}</div>
   	  })}
   	</div>
   );
