@@ -1,7 +1,7 @@
 import React from 'react';
 
 /*********************** UTIL IMPORTS **********************/
-import lib from '/../util/lib'
+import lib from '../util/lib'
 
 // Team assignments is a stateless component that will render onto an element all of the passed 
 // assignments to it through the props
@@ -29,7 +29,7 @@ let TeamAssignments = (props) => {
   return (
   	<div className="teamAssignments">
   	  {team.map((member) => {
-  	  	return <div key={member.name}>{member.name}: {member.role} as {member.god.name}</div>
+  	  	return <div key={member.name}>{member.name}: {lib.capitalize(member.role)} as {lib.capitalize(member.god.name)}</div>
   	  })}
   	</div>
   );
