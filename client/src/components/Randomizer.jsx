@@ -80,7 +80,7 @@ class Randomizer extends React.Component {
           }
         </div>
         <button className="btn" onClick={this.handleSubmit.bind(this)}>S u b m i t</button>
-        <TeamAssignments />
+        <TeamAssignments assignments={this.state.teamAssignments} />
       </div>
     )
   }

@@ -1,9 +1,12 @@
+import React from 'react';
+
 // Team assignments is a stateless component that will render onto an element all of the passed 
 // assignments to it through the props
 
 let TeamAssignments = (props) => {
   
   const assignments = props.assignments;
+  console.log('in team assignments', assignments);
   if (!assignments) {
   	return (<div></div>);
   }
@@ -25,7 +28,7 @@ let TeamAssignments = (props) => {
   return (
   	<div className="teamAssignments">
   	  {team.map((member) => {
-  	  	return <div>{member.name}: {person.role} as {person.god}</div>
+  	  	return <div>{member.name}: {member.role} as {member.god}</div>
   	  })}
   	</div>
   );
