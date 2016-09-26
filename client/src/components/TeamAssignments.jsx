@@ -9,7 +9,7 @@ import lib from '../util/lib'
 let TeamAssignments = (props) => {
   
   const assignments = props.assignments;
-  console.log('in team assignments', assignments);
+
   if (!assignments) {
   	return (<div></div>);
   }
@@ -29,7 +29,10 @@ let TeamAssignments = (props) => {
   return (
   	<div className="teamAssignments">
   	  {team.map((member) => {
-  	  	return <div key={member.name}>{member.name}: {lib.capitalize(member.role)} as {lib.capitalize(member.god.name)}</div>
+  	  	return <div class= "teamDisplay" key={member.name}>
+  	  	  {member.name}: {lib.capitalize(member.role)} as {lib.capitalize(member.god.name)}
+  	  	  <img src={'https://smitepartyservice.herokuapp.com/images?name=' + member.god.name}/>
+  	  	  </div>
   	  })}
   	</div>
   );
