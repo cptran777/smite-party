@@ -28,12 +28,16 @@ let TeamAssignments = (props) => {
 
   return (
   	<div className="teamAssignments">
+  	  <div className="row">
   	  {team.map((member) => {
-  	  	return <div class= "teamDisplay" key={member.name}>
-  	  	  {member.name}: {lib.capitalize(member.role)} as {lib.capitalize(member.god.name)}
-  	  	  <img src={'https://smitepartyservice.herokuapp.com/images?name=' + member.god.name}/>
+  	  	return <div className="col-sm-2" key={member.name}>
+  	  	  <div className="row">
+  	  	    {member.name}: {lib.capitalize(member.role)} as {lib.capitalize(member.god.name)}
+  	  	  </div>
+  	  	  <img src={'https://smitepartyservice.herokuapp.com/images?name=' + member.god.name} className="randomizerImg" />
   	  	  </div>
   	  })}
+  	  </div>
   	</div>
   );
 
