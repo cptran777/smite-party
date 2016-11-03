@@ -7,6 +7,7 @@ A web companion application for the Smite game by Hi-Rez Studios
 This app currently will take 5 players and return randomized roles and god assignments based on those roles. This specific part of the application is focused on front end rendering. 
 
 [Link to Service Repo](https://github.com/cptran777/smite-party-service)
+[Link to Service Repo Rework](https://github.com/cptran777/smite-party-api)
 
 ## Extensions
 
